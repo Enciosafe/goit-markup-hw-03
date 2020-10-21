@@ -173,6 +173,7 @@ body {
 .hero-btn:focus {
   color: var(--primary-accent-color);
   background-color: white;
+  cursor: pointer;
 }
 /* КОНЕЦ ГЕРОЙ */
 
