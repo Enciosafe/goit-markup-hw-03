@@ -24,8 +24,7 @@ img {
 
 h1,
 h2,
-/* h3, */
-p, {
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -55,12 +54,10 @@ body {
 /* ШАПКА */
 
 .container-head {
-  max-width: 1170px;
+  width: 1170px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 215px;
-  margin-right: 215px;
 }
 
 .link > span {
@@ -110,7 +107,9 @@ body {
 .nav-link:hover,
 .nav-link:focus,
 .nav-mail:hover,
-.nav-mail:focus {
+.nav-mail:focus,
+.nav-tel:hover,
+.nav-tel:focus {
   color: var(--primary-accent-color);
 }
 
@@ -125,7 +124,7 @@ body {
 }
 
 .nav-mail {
-  margin-left: 315px;
+  margin-left: 331px;
 }
 /* КОНЕЦ ШАПКИ */
 
@@ -134,25 +133,24 @@ body {
 .hero {
   background-color: var(--footer-color);
   padding-top: 200;
-  padding-left: 452;
-  padding-right: 452;
-  width: 1600px;
+  text-align: center;
 }
 
 .hero-h {
   font-weight: 900;
   font-size: 44px;
-  text-align: center;
   line-height: 60px;
   color: #ffffff;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 696px;
   padding-top: 200px;
-  margin-right: 452px;
-  margin-left: 452px;
+  margin: 0 auto;
+  margin-top: 0;
 }
 
 .hero-btn {
+  width: 1170px;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
@@ -166,9 +164,9 @@ body {
   border-radius: 4px;
 
   margin-top: 30px;
-  margin-right: 700px;
   margin-bottom: 200px;
-  margin-left: 700px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero-btn:hover,
@@ -182,15 +180,16 @@ body {
 
 .work {
   background: #ffffff;
-  width: 1600px;
+  /* width: 1600px; */
   margin-bottom: 94px;
 }
 
 .work-list {
   display: flex;
   width: 1170px;
-  margin-left: 215px;
-  margin-right: 215px;
+  align-items: center;
+
+  margin: 0 auto;
   margin-bottom: 94px;
   justify-content: space-between;
 }
@@ -231,15 +230,9 @@ body {
   justify-content: space-between;
   width: 1170px;
   padding-left: 0;
-  margin-left: 215px;
-  margin-right: 215px;
+  margin: 0 auto;
   margin-top: 50px;
 }
-
-/* .list-item {
-   margin-right: 15px;
-  margin-left: 15px;
-}  */
 
 /* КОНЕЦ ЧЕМ МІ ЗАНИМАЕМСЯ */
 
@@ -253,15 +246,13 @@ body {
 
 .team-list {
   display: flex;
-  margin-top: 50px;
-  margin-left: 215px;
-  margin-right: 215px;
   width: 1170px;
+  margin-top: 50px;
+  margin: 0 auto;
   justify-content: space-between;
 }
 
 .team-title {
-  width: 1600px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -302,6 +293,13 @@ body {
 
 .footer {
   background-color: var(--footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
 }
 
 .footer-adress {
@@ -309,6 +307,14 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .footer-contacts {
@@ -316,8 +322,11 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  margin-bottom: 9px;
 }
-/* КОНЕЦ ПОДВАЛА */
+
+/* КОНЕЦ ПОДВАЛА*/
 
 /* Портфолио */
 .portfolio-page {
@@ -330,22 +339,43 @@ body {
 .port-nav-btn-active {
   background-color: #f5f4fa;
   color: var(--hr-text-color);
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-right: 8px;
+  margin-top: 100px;
+
+  width: auto;
+  height: 38px;
+  left: 576px;
+  top: 174px;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
+}
+
+.portfolio-nav {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .port-nav-btn:hover,
 .port-nav-btn:focus {
   background-color: var(--primary-accent-color);
   color: #ffffff;
+  cursor: pointer;
 }
 
-.port-nav-btn-active {
+.port-active {
   background-color: var(--primary-accent-color);
   color: #ffffff;
+  cursor: pointer;
 }
 
 .port-name {
@@ -353,6 +383,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  text-align: center;
   color: var(--hr-text-color);
 }
 
@@ -360,7 +391,33 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--primary-text-color);
 }
 
+.products {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 94px;
+}
+
+.product-cards {
+  width: 370px;
+  height: 404px;
+  left: 215px;
+  top: 262px;
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.product-cards:hover,
+.product-cards:focus {
+  cursor: pointer;
+}
 /* КОНЕЦ ПОРТФОЛИО */
