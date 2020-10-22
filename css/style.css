@@ -390,18 +390,22 @@ body {
 .port-name {
   font-weight: 700;
   font-size: 18px;
-  line-height: 2;
+  line-height: 36px;
   letter-spacing: 0.06em;
-  text-align: center;
   color: var(--hr-text-color);
+  margin-top: 20px;
+  margin-bottom: 4px;
+  margin-left: 21px;
+  margin-right: 21px;
 }
 
 .port-sub {
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.03em;
-  text-align: center;
+  letter-spacing: 6%;
   color: var(--primary-text-color);
+  margin-left: 22px;
+  margin-right: 22px;
 }
 
 .products {
