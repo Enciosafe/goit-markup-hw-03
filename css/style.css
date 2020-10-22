@@ -187,10 +187,7 @@ body {
 
 .work-list {
   display: flex;
-  width: 1170px;
   align-items: center;
-
-  margin: 0 auto;
   margin-bottom: 94px;
   justify-content: space-between;
 }
@@ -302,6 +299,7 @@ body {
 .container {
   width: 1170px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .footer-adress {
@@ -319,13 +317,21 @@ body {
   margin-top: 0;
 }
 
-.footer-contacts {
+.footer-contacts-mail {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   display: inline-block;
   margin-bottom: 9px;
+}
+
+.footer-contacts-tel {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
 }
 
 /* КОНЕЦ ПОДВАЛА*/
